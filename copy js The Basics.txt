@@ -1,0 +1,1968 @@
+===================================
+<script src="/learn.js"> </script> =>  يوجد طريقتين لجعل الأسكريبت يعمل 
+
+الطريقه الأوله بي الأسفل
+window.onload => بعد كده الخصائص بتنفذ load ده امر معناه ان الصفحه بتعمل      
+مثال
+window.onload = function () {
+    document.querySelector("h1").style.color = "blue"; => خصائص
+}
+الطريقه الثانيه بي الأسفل
+ 
+ body وهيا وضع الأسكريبت في أخر جزء ال
+
+ ================================== 
+ الدرس ال7
+ بعض الطرق لاظهار المعلومات في صفحه الويب
+ 
+.window.alert("صباح الخير"); => هوا امر يجعل المتصفح يرسل رساله الي المستخدم بأي شيء انت تكتبه في الرساله
+
+.document.write(" <h1>hello <span>world</span></h1>") => html هوا امر يمكنك من خلاله عمل ألليمنت من خلال صفحه الجافا سكريبت كأني اضع اوامر في صفحه ال 
+
+.console.log("hello world") => console هوا امر يظهر رساله في صفحه ال 
+
+======================================
+الدرس 8
+
+console تعلم بعض الخواص الخاصه بي
+
+
+1 | log => 
+console.log("log") // => هوا امر يطبع في الكونسول ما بين الكوسين
+.
+2 | error =>
+//=> هوا امر يرسل لصفحه الكونسول رساله حدوث خطأ
+console.Error("Error") 
+.
+3 | taple
+// => امر لعمل جدول بداخله اسامي وكل اسم مرقم بي الترتيب من ال صفر
+console.table(["jimmy", "Osama", "Hima", "Hima", "Hima", "Hima"]) 
+.
+5 | web API => web API الكونسل ليس تابع لل جافا سكريبت بل هوا تابع لل
+
+6 | styling console
+// %c = هيا علامه يمكن من خلاله تنسيق اكثر من كلمه في نفس الجمله  وتوضع خلف الكلمه اللتي نريد تنسيقها داخل الكونسل
+ويمكن وضع اكثر من تنسيق في سطر واحد
+console.log("hello %cmo %cJimmy ", "color:red; font-size:36px; ",  "color:green; font-size:36px;")
+
+======================================
+الدرس ال 9
+// ES6 => هوا نظام حديث حيث ان هذا النظام لتسهيل كاتبه الكود 
+
+======================================
+الدرس ال 10
+
+/*
+-Data Types  انواع البينات
+
+
+-operator => "عامل التشغيل "المشغل"
+
+-typeof => "المشغل"
+
+-string => هوا امر يكون داخل علامتي تنصيص ويتم التعامل معه كأنه نص او رساله
+
+-Number => هوا امر لا يكون داخل علامتي تنصيص ويتم التعامل معه بي طريقه حسابيه
+
+-"String" =>  String اي نص داخل علامتي تنصيص يعتبر 
+
+- true => 1 معناها ان الأمر  
+
+- false => 0 معناها ان الأمر  
+
+-Boolean => true , false هيا رساله تطبع أذا كان الأمر 
+
+-undifined => ار معانه ان الأمر غير موجود
+
+- Opjict = (Number + String)
+
+-[Array] => Opjict هو امر معاه ان اي امر داخل القوس المربع يكون اسمه
+-------
+-{} => هيا علامه يتم الكتابه في دالخلها كلمه معينه وامامها القيمه الخاصه بها ويمكن تكرارها اكثر من مرا في سطر واحد  
+    مثال
+     => console.log(typeof {name: Jimmy , Age: 18 , country: cairo}); // => Opjict
+-------
+*/
+امثله
+
+console.log("Jimmy Osama")
+console.log(typeof("Jimmy Osama")); // => string
+console.log(typeof("5000")); // => string
+
+console.log(typeof(5000)); // => Number
+console.log(typeof(5000.59)); // => Number
+
+console.log(typeof[54 , 10, 94, 59]); // => Opjict
+console.log(typeof["Jimmy", "Osama"]); // => Opjict
+console.log(typeof{name:"Jimmy" , age:18 , country:"Eg"}) // => Opjict
+
+console.log(typeof(true )); // => Boolean
+console.log(typeof(false)); // => Boolean
+
+console.log(typeof(undefined)); // => undefined
+console.log(typeof(null)); // => Opjict
+
+=====================================
+الدرس ال 11
+
+--------------Variable---------------
+
+// Var => "variable" المتغيرات او 
+
+// بيتكون من أربع أجزاء var  ال 
+
+// وحد var داخل  name ويمكن وضع اكثر من 
+
+// global => والتعديل عليه من خلال صفحه الجافا سكريبت var داخل id ويمكن وضع اسم ال html داخل صفحه ال id  معناه ان يمكن عمل 
+/*
+1| Variable => Var or let or const
+2| name => اسم المتغير
+1| Assignment Operator => علامه يساوي
+4| (staing or number) نوع البينات 
+*/ 
+
+var name = "mohamed"
+var age = 18
+
+
+console.log( name )
+console.log( name + age)
+
+=====================================
+ 12 الدرس ال
+
+var name طرق كتابه 
+
+1 | لا يسمح ببدأ الأسم بي رقم
+2 | يسمح بكتابه $ في أي جزأ من الاسم
+3 | يسمح بكتابه _ في أي جزأ من الاسم
+
+=====================================
+الدرس ال 13
+
+اvar ,let ,constف بعض المعلومات  في كيفيه كتابه ال
+وعدم حدوث خط  في الكود
+---Var
+- Redeclare  يمكن تكراره ويظهر اخر متغير( yas)
+- Access Before Declare  لا تسطيع معرفه مكان الخطأ(و undefined ) يرسل رساله لا يوجد معلومات <= console تحت var  عند وضع ال
+--مثال
+console.log(a);
+var a = 4;
+=====
+- Variable Scope Drama [ Added To Window ] ( windowداخل ال var يتم اضافه امر  )
+-Block or Function Scope
+---Let
+- Redeclare يمكن تكراره ( no)
+- Access Before Declare   ا-و تسطيع معرفه مكان الخطأ(erroe ) يرسل رساله خطأ <= console تحت let عند وضع ال  
+-Variable Scope Drama (  windowداخل ال let لا يتم اضافه امر )
+- Block or Function Scope
+---Const
+- Redeclare يمكن تكراره (no + Error)
+- Access Before Declare ا-و تسطيع معرفه مكان الخطأ( error) يرسل رساله خطأ  <= console تحت  const  عند وضع ال
+-Variable Scope Drama (  windowداخل ال const لا يتم اضافه امر  )
+Block or Function Scope
+ */
+ ==============================================
+
+// الدرس 14
+/*
+back slash \ => هيا علامه توضع امام اي علامه برمجيه او نص ويجعلها نص عادي كأنها مكتوبه  
+مثال لبعض العلامات اللتي يمكن تحويلها لنص عادس يكتب 
+
+( /  \  | ""  ''  <>   .  {}   ()  []  ^   &   _   %   $  #  @  !  ~  ` )
+
+كيفيه تشغيل سطر برمجي واحد مكون من اكثر من سطر
+
+في أخر السطر back slahs تضوع علامه
+
+مثال
+console.log("elzero\
+web\
+school");
+---------
+\n => هيا علامه توضع خلف الكلمه لكي ينزل في سطر لوحده
+مثال
+console.log('elzero\nweb\nschool');
+*/
+=========================================
+
+//  الدرس ال15
+
+// Concatenation
+
+
+// let c = "We Love"
+// let d = "JavaScipt"
+// document.write("Java\"Scipt\"");
+
+========================================
+//  الدرس ال16
+/*
+    template literals
+
+concationation طريقه كتابه الكود هذه اسهل من طريقه كود ال  
+في يهذا الكود يختصر الكتابه وليس معقد
+
+مثال
+let a = "We Love"
+let b = "JavaScipt"
+let c = "and"
+let d = "programing"
+console.log(`${a} ${b} ""
+${c} ${d}`);
+
+*/
+كيفيه تكرار المتغير أكثر من مرا
+مثال
+document.write(اسم المتغير.repeat(عدد المطلوب))
+------------
+/*
+الدرس ال18 
+    Arithmetic Operatiors => العمليات الحسابيه 
+1 | + Addition => و تحذف الأصفر الذأده من أمام الرقم  number ألي string تحويل ال
+    مثال (
+     let nums = 0000123
+     log(+nums) = 123 // Remove Zero
+    )
+2 | - Subtraction
+3 | * Multiplicaion
+4 | / Division
+5 | ** Exponentiation (ES7)
+6 | % Modulus (Division Remainder)
+7 | ++ Increment  ( Post بعد الزياده / Pre الزياده المسبقه) اضافه
+8 | -- Decrement ( Post  / Pre) نقص
+    ++--pre =>  يذيد او ينقص من القيمه المضافه اولا ثم يضيف القيمه  
+    post++-- =>(يذيد او ينقص من القيمه المضافه) يضيف القيمه أولا ثم   
+
+    .info => (بيتطبقوا عل نفس المتغير الذي يحمل نفس الأسم وليس متغير اخر Pre,Postال)
+مثال
+
+let a = 4
+let b = 1
+
+console.log(++a + ++b) 
+console.log(a++ + b++) 
+consle.log( قيمه جديده , اقيمه قديمه )
+console.log(2 ** 4) // 2 * 2 * 2 * 2 كأني بقول له اضرب الأتنين ديه أربع مرات
+
+console.log(111 % 3) // 0 
+
+console.log(typeof (NaN)) // Number
+===============================
+الدرس ال19  - وا درس 20
+Unaru Plaus (+"100") => 100 = string   number معناها عند وضع + قبل الأسترنج يتحول ألي  
+Unaru Nevagation (-"100") => -100 = string   -number معناها عند وضع - قبل الأسترنج يتحول ألي  
+
+مثال 
+console.log(+"150") => 150 = number
+console.log(-"150") => 150 = -number
+
+وتستخدم هذه الخاصيه عند جمع أسترنج مع نمبر لكي يكون الناتج نمبر وليس سترنج
+مثال
+console.log(100 + "100") => string خطأ
+console.log(100 + +"100") => Number صح
+
+
+وهذا الكود يوأدي نفس الغرص
+مثال
+console.log(Number(100))
+console.log(Number(-"100"))
+
+info.
+String "" الفاضي = 1
+
+true = 1
+false = 0
+
+==============================
+
+20 الدرس ال
+Assignment Operators العمليات الحسابيه
+
+كيفيه وضع اثناين من نفس نو ع المتغيرات في عمليه حسابيه واحده
+
+مثال
+let a = 20
+a = a + 40  -> يساوي 20 + 40 = 70 a معناها ان الأمر 
+cosole.log(a)
+
+توضيح أكثر
+يساوي نفسه + 40 = 70 = a معني المثال ان الأمر 
+
+هذا الكود يأدي نفس الغرض  ولاكن بطريقه أسهل
+
+a -=40 // a = a - 40;
+console.log(a)
+*/
+
+
+// let a = 20;
+
+// a = a + 40;
+
+// a += 40;
+// a += 50;
+// console.log(a);
+
+===============================
+============Number=============
+/*
+    الدرس ال 23
+
+-Number
+
+    Double Precision
+    Syntactic Sugar "_"
+    e
+    **
+    With Decimal
+    Number + BigInt
+    Number Min Value
+    Number Max Value
+*/
+
+// بعض الأمثله علي كيفيه كتابه  الأرقام بطريقه صحيحه
+
+console.log(1_000_000)
+console.log(1000000)
+console.log(1e6) // معناها انني أريد 6أصفار بجانب الواحد
+console.log(10 ** 6) // 1000000
+console.log(10 * 10 * 10 * 10 * 10 * 10) // 1000000
+console.log(1000000.0) // 1000000
+
+console.log(Number.MAX_VALUE) // معناها ان هذا الرقم هو اعلا رقم  ولا يمكن تخطيه 1.7976931348623157e+308
+console.log(Number.MAX_SAFE_INTEGER) // معناها ان هذا الرقم هوا أعلي رقم أمن يمكن الوصول أليه 9007199254740991 
+console.log(Number.MIN_SAFE_INTEGER) // -معناها ان هذا الرقم هوا أقل رقم أمن يمكن الوصول أليه 9007199254740991 
+
+---------------------------------
+/*
+
+/*
+الدرس 24
+    Number Methods
+    ==============
+    =====Info=====
+    [true , false] Mithods بيكون الناتج الخارج من هذا ال is بيجي قبل منها  Methods اي
+    مثال
+    console.log(Number.isInteger("100")) => false
+    console.log(Number.isInteger(100)) => true
+    ==============
+    - two dots to call A Methods (..) String ألي  Numberالنقطاطين  => هوا امر يحول  ال
+    مثال
+    console.log(100..tostring())
+    ----------
+    - toString() => String ألي  Numberهوا أمر يحول ال
+    مثال
+    console.log((100).toString())
+    ----------
+    -toFixed() => هوا أمر يعطيك حريه الأختيار في عدد الأرقام العشريه في الرقم 
+    مثال
+    console.log(100.55555.toFixed(2)) // 100.55 String معناها انه تم اختيار أول رقمين من الأرقام العشريه في الرقم الموجود ويكون الرقم الناتج 
+    ----------
+    -parseInt() =>( اي أنه يحذف الرقم العشري من الناتج)  و يجعل الناتج بدون رقم عشري  Number ألي  String هو أمر يجعل الناتج من 
+    أذا كان هناك اسم بعد الرقم يستخرج الرقم لوحده بدون الأسم
+    مثال
+    console.log(parseInt("100.500" , jimmy )) // 100 - Not >(Jimmy)
+    ----------
+    -parseFloat() => (أي انه  يجعل الناتج برقم عشري ولا يحذفه) ويستخرج الناتج برقم عشري Number ألي  String هو أمر يجعل الناتج من 
+    وأذا كان هناك اسم بعد الرقم يستخرج الرقم لوحده بدون الأسم
+    مثال
+    console.log(parseFloat("100.500 Jimmy"))  100.500 - Not >(Jimmy)
+    ----------
+    -isInteger() هل هوا عدد صحيح =>true يستخرج  String أذا كان الأمر false أذا كان العدد به كسور يستخرج true أذا كان الأمر عدد صحيح .رقم. يستخرج [true , false] هوا أمر يجعل الناتج 
+    مثال
+    console.log(Number.isInteger("100"))  => false = String لأنه 
+    console.log(Number.isInteger(100.555)) => false =  لأنه عدد به كسور
+    console.log(Number.isInteger(100)) => true = Number لأنه 
+    ----------
+    -isNoN هل هوا ليس رقم =>  [NoN] = الناتج لا يكون رقم  Number و String هو أمر معناه ان الناتج ليس رقم , عند عمليه الضرب  او القسمه بين  
+    true= NoN يكون ناتجها = ليس رقم  Number و String أذا نستنتج أن بعض العمليات الحسابيه  مثل عمليه الضرب والقسمه  بين -:
+    مثال
+    console.log(Number.isNaN("Jimmy" * 100))  // true = Opjict = (Number + String)
+    console.log(Number.isNaN("Jimmy" ))  //false
+    console.log(Number.isNaN( 100 ))  //false
+    */ 
+    ---------------------------------------------
+    الدرس 25
+        /*
+    Math Object
+    ====Info====
+    Math لدخول أي خاصيه من خواص ال
+    console.log(Math.أسم الخاصيه)
+    ============
+    =round() => هوا أمر لجعل العدد صحيح أذا كان به كسور
+    - أذا كان الرقم أقل من نص ينزل الرقم ألي اقل قيمه , أي صفر
+    مثال
+    console.log(Math.round(99.4)) => ( 99.0 ) هنا الرقم العشري  يساوي اقل من نص أذا الناتج يصبح صفر
+    ------
+    - أذا كان الرقم نص أو أكثر أذا الرقم يزيد ألي أعلي قيمه , أي واحد
+    مثال
+    console.log(Math.round(99.5)) => (100) هنا الرقم العشري يساوي نص أذا الناتج يصبح واحد
+    ---------
+    =ceil() الحد الأعلي=>T هواأمر معناه أ، الرقم أذا كان به كسور فأنه يذيد الرقم االعشري ألي أعلي حد , أي واحد 
+    مثال
+    console.log(Math.ceil(99.1)) => 100
+    ---------
+    =floor() الحد الأدني=>T هوا أمر معناه ان الرقم أذا كان به كسور فأنه يجعل الرقم العشري يقل الي الحد الأدنى له أي صفر   
+    مثال
+    console.log(Math.floor(99.9)) => 99
+    ---------
+    =min() اقل رقم =>T هو أمر معناه أنه يحدد أقل رقم بين ألأأرقام الموجوده
+    مثال
+    console.log(Math.min(10 , 20 ,50 ,100 , 400) => 10)
+    ---------
+    =max() أكبر رقم=>T هو أمر معناه أنه يحدد اكبر رقم بين ألأأرقام الموجوده
+    مثال
+    console.log (Math.max(10 , 20 ,50 ,100 , 400) => 400)
+    ---------
+    =pow() الأسس (**) =>i  (**) هوا أمر يأدي نفس وظيفه الأسس  
+    مثال
+    console.log(Math.pow(2,4)) => 16
+    ---------
+    =random() => هوا أمر يحدد رقم بين مجموعه أرقام عشوأيه
+    مثال
+    console.log(Math.random()) => رقم عشوأي
+    --------
+    =trunc => هو أمر يجعل أي رقم بكسور بدون كسور , أي رقم صحيح 
+    مثال
+    console.log(Math.trunc(99.5)) => 99
+    */
+    ==============================
+    /* 
+درس رقم 27
+-String
+=====Info====
+-المسافات التي قبل و بعد المتغير تحسب  عند العد ولا يتم تجاهلها
+
+String Methods part 1
+let theName = " Ahmed " ;
+
+--Access With Index = يبدأ من صفر 
+مثال
+يجب العد من 0 1 2  أي أن الحرف موقعه رقم 2 m لكي نختار حرف ال Ahmad من أسم m أذا أردت التعديل علي حرف 
+0=A 1=h 2=m 3=a 4=d <= Ahmad نستنتج ان 
+console.log(theName[2]) => m
+---------------
+--Access With charAt () = يبدأ من صفر
+مثال
+يجب العد من 0 1 2  أي أن الحرف موقعه رقم 2 m لكي نختار حرف ال Ahmad من أسم m أذا أردت التعديل علي حرف 
+0=A 1=h 2=m 3=a 4=d <= Ahmad نستنتج ان 
+console.log(theName.charAt(2)) => m
+---------------
+--length = يبدأ من واحد
+هوا أمر يحسب  لك عدد العناصر الموجوده في المتغير
+مثال
+console.log(theName.length) 
+--------------
+--trim () =>  يبدأ العد من الصفر
+هوا أمر يزيل المسافات التي قبل و بعد المتغير لكي يتم حسابها عند العد 
+مثال
+consloe.log(theName.trim()) (Ahmed) no space
+--------------
+--toUpperCase () => هوا أمر  يجعل كل الحروف كابيتال 
+مثال
+console.log(theName.toUpperCase()) // AHMED
+--------------
+--toLowerCase () => هو امر يجعل كل الحروق سمول
+مثال
+console.log(theName.toLowerCase()) // ahmed
+-------------
+--Chain Methods =>  داخل أمر واحد  Methods هي طريقه لدمج أكثر من  
+مثال
+console.log(theName.trim().charAt(4).toUpperCase()) // M
+شرح
+أولا من بأزاله المسافات الموجوده قبل وبعد النص ثانيا حددنا الحرف الذي نريد تنسيقه ثالثا بدأت بتنسيق الحرف وجعله كبيتال
+
+*/
+=========================
+/*
+[] 
+.
+charAt()
+.
+length
+.
+trim()
+.
+toUpperCase()
+.
+toLowerCase()
+.
+indexOf()
+.
+lastIndexOf()
+.
+slice()
+.
+split()
+.
+repeat()
+.
+subString()
+.
+subStr()
+.
+incLudes()
+.
+startsWith()
+.
+endsWith()
+.
+typeof() String or Number.... هوا امر يخبرك  نوع البينات أذا كان هذا 
+*/
+الدرس ال 28
+/*
+String Methods part 2
+
+let a = "Elzero Web School"
+
+--indexOf("value" , start) =>  يبدأ من الصفر أذ لم أحدد له بدايه 
+هوا امر لتحديد مكان بدأ العنصر من الشمال ألي الليمين وهوا أمر أجباري
+مثال
+console.log(a.indexOf("web")) => 7
+console.log(a.indexOf("web" , 2)) => 7
+واذا لم لكن النتيجه موجود يعطي = -1
+---------------
+--lastIndexOf( Value) => ويحدد مكانه  value هوا أمر يبدأ البحث عن أخر 
+مثال
+console.log(a.lastIndexOf("o")) => 15
+واذا لم تكن النتيجه موجود يعطي = -1
+---------------
+--slice(Start , End) =>  يبدأ العد من رقم 0 , من الشمال
+هو امر وظيفته قطع جزأ من المحتوي بتحديد البدايه والنهايه من ناحيه الشمال
+Info> .النهايه الناتجه ستكون أقل بواحد لذالك يجب أضافه واحد لكي تحصل علي النتيجه الصحيحه التي تريدها 
+مثال
+console.log(a.slice(12 , 14)) // ch
+---------------
+--slice(-Start , -End)  يبدأ العد من رقم 1 , من اللمين
+هو امر وظيفته قطع جزأ من المحتوي بتحديد البدايه والنهايه من ناحيه اللمين
+Info> .النهايه يجب ان  تكو أقل ب واحد لكي تحصل علي النتيجه الصيحه التي تريدا
+console.log(a.slice(-5 , -3 )) // ch
+
+---------------
+--repeat() => هواأمر لتكرار المتغير حسب العدد
+مثال
+console.log(a.repeat(10)) // Elzero Web School * 10
+---------------
+--split => Array هوا أمر لحذف عنصر أو جعل كل عنصر أو حرف لوحده داخل  
+مثال
+console.log(a.split( " ")) // كل حرف لحاله داخ علامتي تنصيص
+console.log(a.split( "Web")) //"Elzero" "School"
+--split , limit => يبدأ العد من رقم صفر
+تحديد عدد العناصر التي سوف يتم قصها
+مثال
+console.log(a.split(""),6) => امر معاه قص أول 6 أحرف فقط وجعل كل حرف داخل علامتي تنصيص
+
+*/
+============================
+الدرس ال29
+string methods
+*/ 
+
+let a = "elzero web school"
+
+-substring () يبدأ العد من صفر
+هوا أمر يقوم بقص جزأ من الكلمه وأهم مميزاته أنه يمكن وضع البدايه مكان النهايه والعكس ولا يتأثر اكود
+يجب أضافه  عدد واحد عند حساب النهايه
+مثال
+console.log(a.substring(2,6)) //zero
+console.log(a.substring(6,2)) //zero
+-----
+-substr() يبدا من الصفر
+هوا أمر يمكنه قطع جذأ من كلمه واهم مميذاته أنه يسسطيع العد من بدايه النهايه
+يجب أذاله عدد واحد عند الحساب من النهايه
+مثال
+console.log(a.substr(-5 , 3));//ch
+-----
+-includes() يبدأ من الصفر
+هوا امر معناه هل هذه الكلمه موجوده في ذالك المتغير
+console.log(a.includes("web"))//true
+console.log(a.includes("web" , 8))//false
+-----
+-startsWith () يبدأ من الصفر
+امر معناه هل هذا الرقم يبدأ ب هذه الكلمه
+مثال
+console.log(a.startsWith("web" ,7))//true
+console.log(a.startsWith("z" ,2))//true
+-----
+امر معناه هل هذا الرقم ينتهي بهذه الكلمه
+مثال
+console.log(a.endsWith("o" , 6))//true
+console.log(a.endsWith("o")) //false
+========================================
+
+/*
+الدرس ال31
+Comparison Operators
+=============
+==  هل يساوي من حيث ال قيمه
+
+!= هل لا يساوي من حيث القيمه
+
+=== هل يسويان بعضهما من حيث نوع القيمه ونوع البينات 
+
+!== هل لا يساويان بعضهما من حيث نوع القيمه ونوع البينات 
+
+> اكبر من
+
+< اصغر من
+
+>= اكبر من او يساوي 
+
+<= أصغر من أو يساوي
+
+! Not  أو العكس  false ألي true امر يحول أي امر 
+
+&& AND  أمر لأعمل أكثر من شرط في سطر واحد ويجب تنفيذ كل الشروط
+
+|| Or  أمر لعمل أكثر من شرط في سطر واحد ويجب تنفيذ  شرط واحد فقط
+
+
+
+-------------
+(==) Equal => هل القيماتين يسويان بعضهما 
+مثال
+console.log(10 == "10") 10 = 10 ? // true
+------
+(!=) Not Equal => هل القيماتين لا يساويان بعضهما
+مثال
+console.log(10 != "10") هل10 لا تسوي ال10  // false
+------
+(===) Identical => هل نوع البينات والقيمه يساويان بعض
+مثال
+console.log(10 === "10") => false هل 10 تساوي 10 من حيث القيمه ونوع البينات 
+------
+(!==) Not Identical => هل لا يساويان بعضهما من حيث نوع القيمه ونوع البينات
+مثال
+console.log(10 !== "10")  => true  هل ال 10 لا تساوي ال 10 من حيث نوع القيمه ونوع البينات 
+------
+(>=) اكبر من أو يساوي يجب تحقق شرط من الشرطين أذا كان اكبر من او يساوي
+مثال
+console.log(10 >= 10) true
+------
+(=<) اصغر من أو يساوي يجب تحقق شرط من الشرطين أذا كان اصغر من او يساوي
+مثال
+console.log(10 <= 10) true
+*/
+// =======================
+/*
+الدرس ال32
+Logical Operators
+
+    (!) لا Not => أو العكس  false ألي true امر يحول أي امر 
+مثال
+    console.log(!(10 == "10")) false ألي  true تم التحويل من 
+    console.log(!(10 == "100")) true ألي false تم التحويل من 
+------
+&& AND => أمر لعمل أكثر من شرط في سطر واحد ويجب تنفيذ كل الشروط
+مثال
+console.log(10 == "10" && 10 >= 10 ) true
+------
+|| Or => أمر لعمل أكثر من شرط في سطر واحد ويجب تنفيذ  شرط واحد فقط
+مثال
+console.log( 10 == "10" || 10 <= 10 || 10 != "10")
+*/
+// ============================
+/*
+الدرس رقم 44+33
+Control Flow
+============  if
+====Info====
+[يمكن وضع اكثر من شرط داخل شرط واحد ]
+مثال
+if( country === "KSA"){
+    if(student === true){
+        price -= discountAmount + 30 // 100 - 30 + 30 = 40
+    }
+    else if(student === false){
+        price -= discountAmount + 10 // 100 - 30 + 10 = 60
+    }
+}
+console.log(price)
+
+============
+
+    -if => هذا الشرط أذا تحقق , أذا النتيجه المطلوبه تظهر
+    مثال
+    if ( 10 === 10 الشرط){ => الشرط تحقق أذا النتيجه المتطلوبه سوف تظهر
+        النتيجه
+        10 + 20
+    }
+    -else if
+    مثال
+    else if ( 10 === 10 الشرط){ => أذا لم يتحقق الشرط السابق فأن هذ الشرط يتحقق
+        النتيجه
+        10 + 20
+    }
+    -else
+    مثال
+        else{ => أذا لم يتحقق أي من الشروط السابقه فأن هذا الشرط يتحقق أجباري ولا يمكن وضع شروط بعده
+        النتيجه
+        10 + 20
+    }
+    مثال 
+
+let price = 100;
+let discount = false;
+let discountAmount = 30;
+let country = "KSA";
+
+if (discount === true){ // لم يتحقق
+    price -= 20
+}else if( country === "egypt"){// لم يتحقق
+    price -= discountAmount
+}else if ( country === "syria"){ // لم يتحقق
+    price -= 50
+}else{
+    price -= 9 //تحقق أجباري 
+}
+
+console.log(price)
+*/
+// ==========================
+// الدرس رقم 36+35  
+المختصره if ال conditional (Ternary)  Operators
+// كيفيه تخذين الشرط داخل متغير 
+
+// مثال
+// let result = theGender === "Male" ? "Mr" : "Mrs";  // الشرط
+// console.log(result); // المتغير
+
+
+// // =======
+// // condition ? If True  : If false ((if) طريقه كتابه الشرط العاديه)
+
+// // النتيجه التي يجب تحقيقها بعد تحقق الشرط <= ؟ 
+// // : => الشرط الذي يجب تحقيقه 
+// // مثال علي كيفيه كتابه  شرط مختصر
+// theAge < 20          // if  الشرط
+//     ? document.write(20) // true النتيجه
+//     : theAge > 20 && theAge < 60 // else if الشرط
+//     ? document.write("20 to 60") //true تحقق النتيجه 
+//     : theAge > 60 // else if الشرط
+//     ? document.write("Larger Than 60 ") //true النتيجه
+//     : document.write("Unknown"); //else نتيجه أجباريه أذ لم يتحقق أي من الشروط السابقه
+
+// console.log("the price is" `${" " || 200}`) //=> 200
+    
+/*
+=====================================
+الدرس ال29  switch
+/*
+-switch (المتغير) => وا يطبع النتيجه caseلكي  يقارن بين المتغير و ال  case  أختيار المتغير الذي سوف يتم مقارنته مع ال 
+
+-case ( أسم المتغير ): => ويكون مطابق لفس  قيمه المتغير أذا يطبع الناتج المطلوب case عند كتابه اسم المتغير داخل ال
+داخل ناتج واحد لأختيار الناتج الصحيحيcase ويمكن وضع اكثر من 
+-(الناتج)=> case النتيجه التي سوف تظهر بعد تحقق نتيجه ال 
+
+-break; =>لكي لا تبطع النتيجه التي بعدها case امر يوضع تحت كل نهايه من كل 
+
+-default: ( case وتعمل عند عدم تحقق أي من النتائج السابقه لل switch هي نتيجه اجباريه توضع أخر ال)
+
+مثال
+let day = "الأحد"
+
+switch (day) {
+        case("الأحد"):
+        case("الأثنان"):
+        case("السبت"):
+        console.log(" good day ")
+    break;
+        case("الجمعه"):
+        console.log(" is very good day")
+    break;
+        default:console.log(" unknoun")
+}
+*/
+===============================
+// =====================[ Array ]=====================
+// الدرس ال 40
+
+// [] Choose
+
+// [حذف القديم] = [ أضافه الجديد]
+
+// [ length ] how mony variables
+
+// [ length - 1 ]
+
+// [ length ] = 3
+
+// unshift( add ferst)
+
+// push( add last)
+
+// pop(delete on last and storage in a new variable)
+
+// shift(delete on ferst and storage in a new variable)
+
+// indexOf()
+
+// lastIndexOf()
+
+// uncludes()
+
+// sort( arrange numbers and letters)
+
+// reverse(reverse)
+
+// slice( start , end)
+
+// splice(Position , Delete , Addition)
+
+// join(delete space)
+
+// concat(To Merage)
+
+
+// ام لا Array كيفيه معرفه أذا كان ذالك العنصر 
+//مثال
+let title = ["Ahmed", "Jimmy" , "Osama"]
+console.log(Array.isArray(title)) // => أم لا Array امر معناه هل هذا المتغير 
+// ---------
+// يبدأ العد من الصفر Array كيفيه اختيار عنصر من داخل ال
+    // مثال
+// console.log(`Hello ${ myFriends[ 1 المختار الأبArray رقم ال][ 4 الأبن Array رقم العنصر الذي داخل ال ]} `)
+let myFriends = ["Ahmed", "Jimmy" , "Osama"] // Array طريقه كتابه ال
+console.log(`Hello ${ myFriends[ 1 ][ 4 ]} `) // Hello y
+// ---------
+let mybrhter = ["Ahmed", "Jimmy" , "Osama" ,["Donia" , "Kamlia"]] // Array دالخل  Array طريقه وضع 
+// مثال
+// console.log(`Hello ${mybrhter[3 الجد Array رقم العنصر الذي داخل ال]][الأب 0 Array رقم العنصر الذي داخل ال][الأبن 3 Array رقم العنصر الذي داخل ال]}`)
+console.log(`Hello ${ mybrhter[ 3 ][ 0 ][3]} `) //Hello i
+// ---------
+
+// وتغيره بعنصر أخر Array كيفيه أختيار عنصر من داخل ال
+// مثال
+let str = ["Ahmed", "Jimmy" ,"emmy" , "Osama"]
+str[2] = "ramadan"
+// Array كيفيه تغير عنصر بأضافه أكثر من 
+// مثال
+str[1] = ["only" , "Donia"]
+console.log(str)
+//شرح
+// str سم المتغيرl[1 العنصر الذي سوف يتم تبديله] = " الأسم البديلramadan"
+
+// ==========================================
+// الدرس ال 41
+
+// Array length
+//بطريقه ديناميكيه Arrayهوا أمر لكيفيه أضافه عنصر داخل ال
+// مثال
+
+let gruop = ["Ahmed", "Jimmy" , "Osama" , "Donia" , "Kamlia"] 
+
+gruop[gruop.length ] = "faris"
+console.log(gruop)
+
+//و أضافه عنصر مكانه بطريقه ديناميكيه  Arrayكيفيه حذف عنصر من ال 
+// يتم الحذف من الأخر ألي ألأول
+//  5  4  3  2  1
+//مثال
+gruop[gruop.length - 1 ] = "faris" // faris وأضافه مكانها Kamlia تم حذف كلمه 
+console.log(gruop)
+// التي تريد طباعتها Array كيفيه تحديد عدد عناصر ال
+// مثال
+gruop.length = 3
+console.log(gruop)
+
+// ==========================================
+// الدرس ال42
+// Array التي يمكن أضافتها داخل ال Array Methods بعض ال
+
+let box = ["Ahmed", "Jimmy" , "Osama" , "Donia" , "Kamlia"]  //  Array
+let box1 = ["Ahmed", "Jimmy" , "Osama" , "Donia" , "Kamlia"]  //  Array
+
+
+// unshift() 
+// push()
+// shift()
+// pop()
+// --------
+//شرح
+// unnShift() => Array أمر يمكن أستخدامه لأضافه عناصر في أول ال
+// مثال
+box.unshift("Sara","Mena")
+console.log(box)
+// --------
+// push() => Array أمر يمكن من خلاله أضافه عناصر في أخر ال
+// مثال
+box.push("Sara","Mena")
+console.log(box)
+// --------
+// shift() ويمكن تخزينه داخل متغير Array هوا أمر يحذف أول عنصر في ال
+box.shift()
+console.log(box)
+// مثال علي كيفه حذف أول عنر وتخزينه داخل متغير
+let first = box.shift() // داحل متغير shift Methods تخذين ال
+console.log(`First Name Is ${first}`)
+// --------
+// pop() ويمكن تخزينه داخل متغير Array هوا أمر يحذف أخر عنصر في ال
+box.pop()
+console.log(box)
+// مثال علي كيفه حذف أخر عنصر وتخزينه داخل متغير
+let last = box1.pop() // داحل متغير shift Methods تخذين ال
+console.log(`last Name Is ${last}`)
+
+// =======================
+// الدرس 43
+// Search Methods  => (Array بعض الطرق للبحث داخل ال )
+
+// info => النتيجه تخرج ب -1 lastIndexOf و indexOf أذا كانت القيمه غير موجوده في
+
+let team = ["Ahmd", "Osama", "Jimmy" , "Osama" , "Donia" , "Ahmed"]
+
+// indexOf()
+// lastIndexOf()
+// includes
+//------------
+
+// indexOf => ويمكن تحديد مكان بدأ البحث Array ومعرفه ترتيبها داخل ال  Array وا أمر يبحث عن الكلمه داخل ال
+// مثال
+console.log(team.indexOf("Ahmed")) //هوا 0  Array  مكان العنصر دالخل ال 
+console.log(team.indexOf("Ahmed" , 2)) // هوا 4Array  مكان العنصر داخل ال  Array  تحديد بدأ البحث داخل ال
+// ------
+// lastIndexOf()   بدأ البحث من اللمين للشمال بنفس العد الطبيعي
+//مثال 
+console.log(team.lastIndexOf("Osama" , -3 )) // تحديد موقع بدأ البحث بي القيمه السالبه ولا يقبل القيمه الموجبه
+console.log(team.lastIndexOf("Osama" )) //  3 2 1 0 بدأ البحث من اللمين للشمال بنفس العد الطبيعي
+// ------
+// includes() و يمكن تحديد موقع بدأ البحث  Array أمر يسطتيع معرفه هل هذه الكلمه موجوده في ال
+// مثال
+console.log(team.includes("Donia" )) // true
+console.log(team.includes("Donia" , 5)) //false تحديد موقع بدا البحث
+
+
+// =======================
+// الدرس 44
+// String Array 
+
+let cont = [10 , "Sayad" , "Mohamed" , "90" , 1000 , 100 , "10" , -20 , -10]
+// sort() = Array امر يرتب العناصر من الأصغر للأكبر داخل محتوي ال 
+// مثال
+console.log(cont.sort()) //   [-10, -20, 10, '10', 100, 1000, '90', 'Mohamed', 'Sayad'] => ترتيب من الصغير للكبير
+// ------
+// reverse() => أمر يعكس المحتوي من اليمين ألي الشمال أو العكس 
+console.log(cont.reverse()) // ) [10, 'Sayad', 'Mohamed', '90', 1000, 100, '10', -20, -10]
+// ------
+
+// =======================
+// الدرس 45
+let slc = ["Ahmed", "Jimmy" , "Osama" , "Donia" , "Kamlia"]  //  Array
+
+
+// slice(star - end)  => يبدأ العد من صفر Array قطع جذأ من ال
+//Info 1=> (+) النهايه لا تحسب أخر عدد يجب اضافاه ععد واح لكي تحصل علي المطلوب
+//Info 2=> (-)النهايه لا تحسب أخر عدد في القيمه السالبه ويجب حذف عدد واحد من النهايه لتحصل علي القيمه المطلوبه
+//Info 3=> جديده تماما ومنعذله عن القديمه Array  فأنه يخلق  Array عند قطع جذأ من ال
+// ------
+// splice( position , deleted , Add) 
+// splice( المحتوي الذي سوف تضيفه , عدد المحتوي الذي سوفه تحذفه  , مكان البدأ ) 
+// ----------
+
+// slice() 
+// مثال
+console.log(slc.slice(1 , 3))//[ "Jimmy" , "Osama"]
+console.log(slc.slice(-4 , -2))//[ "Jimmy" , "Osama"]
+
+// splice ()
+// مثال
+slc.splice(1 , 3 , "Salma" , "Sayed" , "Ameer" )
+console.log(slc)
+
+
+// =======================
+// الدرس 46
+
+// concat()
+// join()
+
+let friends = [ "gamal", "Jimmy" , "loka" , "mody" , "candis"]
+let schoolfriends = [ "Jimmy" ,  "Donia" ]
+let newfriends = ["Ahemd", "Osama", ]
+
+// concat() => Array هوا أمر يمكن من خلاله دمج اكثر من 
+// مثال
+let allFriends = (friends.concat(schoolfriends , newfriends))
+console.log(allFriends)
+
+// ------
+
+// join() =>  ويضيف  بدل منه أي عنصر أو رمزArray التي بين الكلام في ال Space هوا أمر يحذف ال
+// مثال
+console.log(allFriends.join(" ! "))
+
+======================================
+
+/* 
+
+----------Loop-----------
+الدرس رقم 49
+    -------For-------
+    --------------------------------------------------------------------------------
+    info => for الي تكون داخل ال i =  العناصر التي تكون داخل المتغيرات هي تساوي  
+    مثال  
+                i         i         i      for التي تكون داخل عنصر ال(i) ال   
+    let str= ["Ahmed", "Jimmy" , "Osama"]  (i) العناصر التي تمثل المتغير   
+    --------------------------------------------------------------------------------
+    for( بعد التأكد أن العنصر موجود أطبعه , عدد العناصر المفروض طباعتها , مرحله البدأ){ 
+        النتيجه
+    }
+
+    let i = 0; امر معناه أني أريد بدأ العد من  رقم صفر
+    i < 10; امر معناه اني أريد طباعه أقل من عشر عناصر
+    i++; بعد التأكد أن هذا العنصر هوا المطلوب أذا أنا أريدأضافته وطباعته
+
+    مثال
+    let str= ["Ahmed", "Jimmy" , "Osama"] 
+    for(let i = 0; i < 5; i++){
+        if(typeof str[i] === "string"){ string تساوي  str[i] أريد طباعه عنصر  من عناصر ال متغير أذا كانت ال
+            console.log(str[i]) string التي تكون بيناتها  i طباعه كل ال
+    }
+}
+*/
+
+
+// ======================================
+
+// ----------Loop-----------
+// الدرس رقم 50
+//-------Nested Loops-------
+// Nested Loops => واحدloop داخل loop معنها وضع أكثر من
+// شرح
+//المتغير الثاني  يوضع كاملا تحت كل عنصر من عناصر المتغير الأول والمتغير الثالث يوضع تحت كل عنصر من عناصر المتغيرالأول
+// الأول loop الثالث يوضع تحت كل عنصر من عناصر ال loop الأول والloop  الثاني يوضع تحت كل عنصر من عناصر ال loop ال
+/*
+let pro    = ["Keyboard" , "Mouse" , "pen" , "pad" , "case" ,"controlar"] 
+
+let colors = ["Red" , "Green" ]
+
+let models = [ 2020 , 2021]
+
+for( let i = 0; i < pro.length; i++){
+    console.log(pro[i])
+for( let c = 0; c < colors.length; c++){
+    console.log(colors[c])
+    }
+for( let m = 0; m < models.length; m++){
+    console.log(models[m])
+    }
+}
+*/
+// ======================================
+/*
+----------Loop-----------
+    الدرس رقم 51  
+-------Loop Control------
+-break 
+-Continue
+-Label
+---------
+let pro  = ["Keyboard" , 6 , 5 , 4 ,"Mouse" , "pen" , "pad" , 66 , 65 , 54, "case" ,"controlar"]
+let colors = ["Red" , "Green" , "valyot" ]
+
+-------------------
+-break => ( عند الأمر الذي تحدده loop يتوقف ال)  هوا أمر يقوم بحذف العنصر الذي أنت تحدده ووكل العناصر التي بعده 
+-------------------
+مثال
+for( let i = 0; i < pro.length; i++){
+    if(pro[i] === "Mouse"){
+        break;   =>   "Mouse" حذف عنصر المحدد و كل العناصر التي بعد ال
+    }
+    console.log(pro[i]) طبع  => ["Keyboard" , "Mouse" ]
+}
+-------------------
+-Continue => هوا أمر يقوم بحذف  العناصر التي أنت تحدده ويخرج الناتج بدون العناصر المحذوفه
+-------------------
+مثال
+for( let i = 0; i < pro.length; i++){
+    if( typeof pro[i] === "number"){
+        continue; حذف العناصر المحدده وطبع النتج بدونها
+    }
+    console.log(pro[i]) الطبع =>  ["Keyboard","Mouse","pen","pad","case","controlar"]
+}
+-------------------
+-Label => Name: بوضع قبله  for هوا أمر لتميز ال 
+الأب والتعديل عليه for الأبن أستدعاء ال for و مكن بهذا الأمر من خلال ال 
+مثال
+perantloob:for( let i = 0; i < pro.length; i++){
+    console.log(pro[i])
+childloob:for( let c = 0; c < colors.length; c++){
+    console.log(colors[c])
+    }
+}
+-------------------
+ */
+// الدرس ال53-52
+
+// في كيفيه عمل قائمه منتجات وألوانها loop مثال علي أليت عمل  ال
+
+let pro = ["Keyboard", "Mouse", "pen", "pad", "case", "controlar"]; // المنتجت
+
+let colors = ["Red", "Green", "valyot"]; // ألوان المنتجات
+
+let count = 5; //  عدد الأمنتجات الذي نريد طباعته
+
+document.write(`<h1>Show ${count} products</h1>`); // title العناون
+
+products:for (let i = 0; i < count; i++) {// المنتاجات
+    document.write(`<div>`); // perant بدايه الديف الأب
+
+    document.write(`<h3>${i + 1 } ${pro[i]} </h3>`);   //الطباعه
+    come:for(let c = 0; c < colors.length; c++){ // ألوان المنتجات
+        document.write(` ${colors[c]} `); //الطباعه
+    }
+
+    document.write(`</div>`);  // perant نهايه الديف الأب
+}
+
+// الدرس ال54
+// ====Loop While====
+// while => لا يطبع false  يطبع وأذا كان  true هوا أمر يقوم ب ألفحص أولا ثم الطباعه أذا كان الأمر 
+// مثال
+let pro = ["Keyboard", "Mouse"]; // المنتجت
+let i = 0 // موقع البدأ
+while (index < pro.length){ // العدد العناصر التي يجب طباعتها 
+    console.log(pro[i]) // الطباعه
+    i++ // أمر معناه . بعد التأكد أن هذا هوا العنصر المطلوب أذا انا أريد طباعته
+}
+
+// الدرس ال54
+// ====Loop Do / While====
+// Do while => true or false هوا امر يقوم ب الطباعه اول أمر  فقط ثم يبدأ ب الفحص أذا كان 
+
+// مثال
+let i = 0;
+do{
+    console.log(pro[i])
+    i++;
+}while (i < pro.length);
+
+======================================================================================
+======================================================================================
+/* بسم الله الرحمان الرحيم */
+الدرس ال57
+/*
+=========Function==========
+*/
+/*
+-----
+fanction => هو امر يساعد في في تكرار الكود بطريقه ديناميكيه وسهله 
+--
+Syntax
+-----
+
+function Name((variable) متغير){
+    الي أنا محتاج اطبعه بكتبه هنا
+    console.log(`Hello ${ (varible) متغير}`)  =>  ده الأمر اللي هيطتبق
+}
+Name( (value) العنصر الي داخل المتغير ) => أستدعاء المعامل
+-----
+مثال
+function sayHello(userName){
+    console.log(`Hello ${userName}`)
+}
+sayHello("World")  => Hello World
+sayHello("Frinds") => Hello Frinds
+sayHello("Osama")  => Hello Osama
+*/
+
+/*
+======================================================================================
+الدرس 58
+========= function Advanced ExampleS ==========
+inof => يمكن أستعداء أكثر من معامل , و يمكن أيضا وضع أكثر من متغير داخل معامل واحد
+
+// 1 مثال
+function وضع اكثر من متغير في ال
+
+function sayHello(userName, Age, country) {
+    console.log(`Hi ${userName} Your Is Age (${Age}) And Country (${country})`);
+}
+sayHello("Salma", "12", "Egypt");
+sayHello("Jimmy", "19", "KSA");
+sayHello("Hoda", "18", "dubi");
+sayHello("Donia", "14", "Palstaine");
+===========
+
+// 2 مثال 
+function داخل ال if condtion عمل 
+
+function sayHello(userName, Age, country) {
+    if(Age < 12 ){
+        console.log(`App Is Not Suitable For You`)
+    }else{
+        console.log(`Hi ${userName} Your Is Age (${Age}) And Country (${country})`);
+    }
+}
+sayHello("Salma", 11, "Egypt");
+sayHello("Donia", 10, "Palstaine");
+sayHello("Jimmy", 20, "KSA");
+sayHello("Hoda", 18, "dubi");
+
+// مثال 3
+function داخل ال loop عمل 
+
+function Years( start , end , excloude){ // المعامل + المتغيرات
+    for(i = start; i <= end; i++){
+        if(i === excloude){
+            continue;
+        }
+        console.log(`--- ${i} ---`)
+    }
+}
+Years( 1980 , 2022 , 2020) // أستدعاء المتغيرات
+*/
+/* 
+======================================================================================
+// ========= Return ========== 
+// الدرس ال59
+
+//       --     ( return )     --
+// 1 => فقط function هوا أمر يعمل داخل ال
+// 2 => function في أخر ال return يتم كتابه ال
+// 3 => لا تعمل وتكون بلا قيمه return  كل الأكواد التي تحت ال
+// 4 => كامله داخل المعامل أو متغير  function  يمكن أستخدمها لتخزين قيمه ناتج return ال
+// 5 =>  أخري أو طباعتا داخل أي مكان أخر أو أي مثال function يمكن أستدعأها داخل function بعد تخزين قيمه  ناتج ال
+// 6 => return يساوي القيمه التي داخل ال , function المعامل الذي يكون داخل ال
+// -----
+// مثال 4
+// داخل متغير function علي كيفيه تخزين
+
+function pro(price, taxes, ads) {
+    let product = price + taxes;
+    let result = product + ads;
+    return result; // result أصبحت تستوي قيمه pro أذا , pro داخل المعامل  result تم تخزين قيمه ال
+}
+let x = pro(200, 1.5, 40); // تخزين المعامل في متغير
+console.log(x); // طباعه المتغير
+
+// مثال 5
+// علي كيفيه حساب العمر بي الساعات
+function calcdays(days) {
+  let result = days * 365;
+  return result;
+}
+let day = calcdays(18);
+
+function calcAgeHours(Age) {
+  let result = Age * 24;
+  return result;
+}
+let hours = calcAgeHours(day);
+console.log(hours);
+*/
+/*
+======================================================================================
+========== default Parametrs===========
+// الدرس رقم60 
+(parameters) درس  عن  بعض الطرق  علي كيفيه التعامل مع عدم وجود بينات داخل المعامل
+-----
+Name => هوا قيمه المتغير الغير موجوده
+-----
+"Unknown" موجوده أطبع قيمته وأذ لم تكن موجوده أطبع   Name أذا كانت ال 
+// -1- if condtion => function يتم كتابه شرط داخل ال (Default) الطريقه العاديه
+---------
+مثال
+if(Name === undefinde){
+	Name = "Unknown"
+}
+---------
+// -2- Or|| => function يتم كتابتها داخل ال Or طريقه 
+مثال
+Name = Name || "Unknown"  =>  "Unknown" موجوده أطبع قيمته وأذ لم تكن موجوده أطبع   Name أذا كانت ال 
+---------
+// -3- ES6 => ( داخل المعمل) Paramters الطريقه الأحدث يتم كتابتها داخل ال 
+مثال
+function parameters(Name = "Unknown"){
+	block of code
+}
+*/
+/*
+// مثال حي عل ما سبق
+function par(Age = "Unknown", Name = "Unknown") { // ES6 طريقه
+  // -------------------
+  if (Name === undefined) { // if condtion طريقه
+    
+    Name = "Unknown";
+  }
+  Name = Name || " Unknown"; // Or طريقه
+  // -------------------
+  return `Your name is ${Name} and Age is ${Age}`;
+}
+
+console.log(par("21" , no name ));
+*/
+
+/*
+======================================================================================
+========== Rest Parametrs ===========
+الدرس رقم 61
+
+rest ( ...Name) => Array هوا أمر يحول المعامل ألي  
+مثال
+وأضافتها ألي متغير أخر Array وجمع عناصر ال ,  function داخل ال Array علي كيفيه عمل 
+
+function calc(...numbers ){ // Array المتغير الذي يحتوي عناصر ال
+  let result = 0; // Arrayالمتغير الذي سوف نضيف أليه حاصل جمع ال
+  for(let i = 0; i < numbers.length; i++){
+    result+=number[i]
+  }
+  return result;
+}
+console.log(calc(10, 20, 30, 50, 60, 10)); // => (180)
+
+*/
+
+======================================================================================
+
+/* ========= Aunction Advanced Pracrice ========== */
+/*
+// الدرس رقم 62
+=============
+// مثال علي عرض بينات المستخدم
+=============
+//الأدوات الذي سوف نستخدها
+----
+// Parameters
+// Deafult
+// Rest
+// Loop
+// Condation
+----
+ماذا فهمنا من ذالك المثال
+----------
+-1 => العاديه parameter  بعد ال rest parameter يمكن اضفه 
+showInfo(user ,age ,reat ,...skils )
+----------
+-2 => عندما أكون غير متأكد أذا كانت البينات  موجوده او غير موجوده rest parameter  ويتم اضافه ال
+----------
+*/
+
+showInfo = function ( user = "Unknown", age = "Unknown", rate = 0,  show = "Yes", ...skills) {
+  document.write("<div>");
+  document.write(`<h2>Welcome: ${user}</h2> `);
+  document.write(`<h2>Age: ${age}</h2>`);
+  document.write(`<h5>Hour Rate: $${rate}</h5> `);
+  if (show === "Yes") { // Yes عرض
+    if (skills.length > 0) { // أذا اختار الشخص  اظهر بينات وهناك بينات فعلا أرسل له  هذه الرساله
+      document.write(`<h2> Skills: </h2>`);
+      for( let i = 0; i < skills.length; i++ ){
+        document.write(`<p> ${i + 1 }: ${skills[i]} </p>`);
+      }
+      } else { // أذا اختار الشخص اريد ان  اظهر البينات و ليس هناك بينات أرسل له  هذه الرساله
+      document.write(`<p> Skills: No Skills </p>`);
+    }
+  } else { // No عدم عرض
+    if(skills.length > 0 ){ // أذا اختار الشخص عدم اظهر بينات وهناك بينات أرسل له  هذه الرساله
+      document.write(`<p> Skills Is Hidden </p>`);
+    }
+  }
+  document.write("</div>");
+}
+showInfo("Jimmy", 18, "59", "Yes" , /* skills*/" HTML" , " CSS " , " JavaScript ");
+======================================================================================
+
+============63 الدرس ررقم============
+================التحدي===============
+=====================================
+
+======================================================================================
+/*
+========== anonymous Function ===========
+========الفانكشان التي بدون أسم=========
+// الدرس ال64
+------------------
+// 1 => يمكن تخزينها داخل متغير ويمكن أستدعائها ب أسم المتغير نفسه Functionال
+مثال
+let calc = function (num1 , num2){
+  return num1 + num2;
+}
+console.log(calc(10 , 20))
+------------------
+// 2 => parametar عندما يكون داخل متغير لأن أسم المتغير هوا ال function لل parametar لا نسطيع وضع   
+مثال
+let calc = function parametar(num1 , num2) // Error
+----------------------
+// 3 => Html ويتم أستخدامها  عند أستدعاء عنصر من صفحه ال 
+----------------------
+// 4 =  Error لكي لا يعطي  function وليس فوق ال function التي بدون أسم يجب أن يكون أمر الأستدعاء تحت الfunction عندما نستدعي ال
+مثال
+console.log(calc(10 , 20)) // Error
+let calc = function (num1 , num2){} 
+----------------------
+*/
+======================================================================================
+/*
+1 ========== Nested Function ===========
+2 ========== Nested Function Return=====
+  ======الدرس رقم 65
+1 Function داخل Function  كيفيه عمل 
+2 Nested Function داخل ال return كيفيه وضع امر ال
+----
+Info
+2 ->  return  التي بداخله بشرط أن يكون لكل شرط  أمر  function  الأب , يتم أيضا أستدعاء جميع الfunction  عند أستدعاء
+3 ->  الأب و التعديل عليهfunction  الأبن يمكن أن يستدعي ال function ال
+مثال
+
+function sayMessage(fname, lname) { // perant
+  let message = "Hello"; // أنشأنا متغير
+  function concatMessage() { // child
+    function getMessage() { // Extra child
+      return `${fname} ${lname}`;
+    }
+    return `${message} ${getMessage()}`;  //  getMessage() عمل أرجاع لل 
+  }
+  return concatMessage(); // concatMessage()  عمل أرجاع لل 
+}
+console.log(sayMessage("Mohamed", "Gamal")); // sayMessage()  عمل أرجاع لل
+
+*/
+
+// ======================================================================================
+
+/*
+
+1 ========== Arrow Function (=>) ===========
+============= الدرس ال66 
+1 =>  (Parametrs) لا يكون لها معامل
+2 => يكون لي أنا الأختيار بكتابه متغير أو عدم كتابه متغير داخل المعامل
+3 => Function لا يكتب بداخلها كلمه
+4 => بواسطه اسم المتغير function توضع داخل متغير ويتم أستدعاء ال
+5 => {} block of code  نحذف القوسين  عندما يكون هناك  سطر واحد  فقط داخل ال 
+6 => {} return عند أذاله الأقواس يسمح لنا بعدم كتابه أمر 
+7 => () أذا كان هناك متغير واحد فقط داخل المعامل يمكن حذف القوسين
+8 => {} عادي return وأذا كانت هناك أقواس يسمح لنا بكتابه أمر 
+مثال
+-------------------
+ //                 الطريقه القديمه
+let print = function (num1 , num2){ 
+return num1 + num2
+}
+console.log(print(50 , 100))
+-------------------
+  //               طريقه الكتابه ب الأقواس
+let print = (num1, num2) => {
+  return num1 + num2;
+};
+console.log(print(50, 100));
+-------------------
+ //                  طريقه الكتابه بدون أقواس
+let print = (num1, num2) => num1 + num2;
+console.log(print(50, 100));
+-------------------
+*/
+// ======================================================================================
+
+/*
+  ========== Scope  ===========
+  ======== الدرس ال67 
+  -Global And Local Scope
+  --
+  Info
+ local Scope => .....و أللخ if condition او For او Function معناها هنا هو ال
+  --
+  1 =>  يمكن الدخول أليها من أي مكان في الصفحه Global المتغير ال
+  2 =>  الخاص به Scope يمكن الدخول أليه فقط من ال  Local المتغير ال
+  3 => Error  يجب وضع المتغيرات ثم طيع النتأج لكي لا يعطي local Scope  عند عمل
+  مثال
+
+// Local
+function call() {           
+  var a = 10;
+  let b = 20;
+  console.log(`From Local${a}`);
+  console.log(`From Local${b}`);      
+}
+call();
+-----
+//Global
+var a = "One";
+let b = "Two";
+console.log(`From Global ${a}`);
+console.log(`From Global ${b}`);
+
+*/
+
+// ======================================================================================
+
+/*
+
+  ========== Scope ===========
+  - Block Scope [if , Switch , For]
+  ======== الدرس ال68 
+  1 => ويمكن أستدعأه من اي مكان في الصفحه Global  هوا متغير Var ال
+  2 => الذي به وليس من خارجهLocal Scope عند أستدعأه يجب أستدعأه من ال Local Scope أذا دخل في  (let) or (const) ال
+  مثال
+  if( 10 === 10){
+    let x = 10;
+    console.log(`Local Scope ${x}`)  // true 10
+  }
+    console.log(`Local Scope ${x}`)  // false Error
+  ------------
+  3 => Local Scope أو من خارج ال Local Scope يمكن أستدعأه من داخل ال Local Scope أذا دخل في  Var ال
+  مثال
+  if( 10 === 10){
+  var x = 10;
+  console.log(`Local Scope ${x}`)  // true 10
+}
+  console.log(`Local Scope ${x}`)  // true 10
+  ------------
+*/
+
+// ======================================================================================
+
+/*
+========== lexical Scope  ===========
+الدرس ال 69
+مثال علي الدرس
+      // النتيجه سوفه تخرج صحيحه
+function perant() {
+  let a = 10;
+  function child() {
+    console.log(a);
+  }
+  child();
+}
+perant();
+-------
+      // Error النتيجه سوف تخرج ب
+function perant() {
+  console.log(a);
+  function child() {
+  let a = 10;
+  }
+  child();
+}
+perant();
+
+شرح المثال
+
+1 - Function Child ووضع متغير داخل ال Function Child بداخلها Function perant عند أنشاء 
+2 - Function Perant سوف نستدعيه بواسطه ال Function Child المتغير الذي بداخل 
+3 - Error النتيجه سوف تكون 
+4 - وأذا حدث العكس وأستدعين المتغير الذي في الأب للأبن النتيجه سوف تخرج سليمه
+
+*/
+
+    ======================================================================================
+
+/*
+
+========= Higher-Map =========
+
+الدرس ال 71
+
+info =>  الخاص بها والتعديل عليه parameters من ال function يمكنها أستدعاء  Map ال 
+مثال لجمع العناصر في بعضها
+--------------
+let myArray = [1, 2, 3, 4, 5, 6]
+function par( element) => element+element;
+
+let Add = myArray.map(par) => الخاص بها parameters من ال  function  أستدعاء ال
+console.log(Add)
+Syntax typing Map
+
+--------------
+
+1 => بداخله function أسم  ألمتغير الذي سوف يتم تخذين ال
+2 => الذي سو يتم التعديل عليه Array أسم ال 
+3 => Map( Function (Element , index , Array))
+4 => block of Code
+5 => الأستدعاء
+---------
+في بعضها Array لجمع عناصر ال Map مثال علي كيفه عمل 
+-
+Normal Function--->
+-
+let myArray = [1, 2, 3, 4, 5, 6]
+let addArray = myArray.map(function (elemnt , index , arr){
+  return element + element;
+})
+console.log(addArray)
+---------
+-
+Arrow Function--->
+-
+let myArray = [1, 2, 3, 4, 5, 6]
+let addArray = myArray.map((element, index, arr) => element + element)
+console.log(addArray)
+*/
+/*
+========= Higher-Map =========
+الدرس ال72
+  Advanced Example in Map
+  Exam1 => Swap 
+  Exam2 => Inverted Numbers 
+  Exam3 => Ignore Boolean Value
+*/
+
+// Example-one
+/*
+الشرط
+أذا كان المتغير به حروف كبيره
+-----
+true الناتج
+أريد  أن أعكس  الحروف  من كبيره ألي صغير  
+-----
+false الناتج
+أريد أن أعكس الحروف من صغيره ألي كبيره
+*/
+let swapping  = "elZERo"
+let swap = swapping.split("").map((ele) => ele === ele.toUpperCase() ? ele.toLowerCase() : ele.toUpperCase()).join("")
+console.log(swap)
+
+// Example-two
+// info => نفي النفي أثبات هذا ما تم عمله في المثال
+// شرح
+//  كل الأرقام التي ب قيمه سالبه , أضف أليها سالب لكي تتحول لموجب
+let invertedNumbers = [ 1, -10, -20, 15, 100, -30]
+let invert = invertedNumbers.map((ele)=> -ele )
+
+console.log(invert)
+
+// Example-three
+/*
+الشرط
+أذا كان به عناصر ليست أرقام
+-----
+true الناتج
+أطبعها كما هيا
+-----
+false الناتج
+أجعلها بل قيمه 
+*/
+let ignoreBoolean = "ELz123er4o"
+let ignore = ignoreBoolean.split("").map((ele)=> isNaN(ele) ? ele : ele = "").join("")
+console.log(ignore)
+
+// ===================================================================================
+
+/*
+
+// ========= Higher-Filter =========
+//   الدرس ال73 
+// filter =>
+1 => Map هي نفس طريقه كتابه ال filter طريقه كتابه ال
+2 =>true Or false هوا أمر عباره عن شرط 
+3 => هوا امر يمشي علي جميع العناصر وأذ اكان ذالك العنصر موافق لمعاير الشرط اطبعه 
+*/
+
+
+/*
+// مثال 1
+شرح
+1 => أي رقم يقبل الأسم علي ال 2 و ساوي 0 أطبعه
+2 => وأي عنصر مخالف للشرط لا تطبعه
+*/
+
+let numbers = [11, 20, 2, 5, 17, 10]
+let evenNumbers = numbers.filter((ele) => ele % 2 === 0)
+console.log(evenNumbers )
+
+
+/*
+// مثال 2
+شرح
+1 => أطبعه ("A") أي عنصر يبدأ ب حرف ال
+2 => وأي عنصر مخالف للشرط لا تطبعه
+*/
+let frinds =["Ahmed", "Jimmy", "Asmaa", "Osama", "Donia", "Rahma", "Mona", "Abdolah"]
+let filterFrinds = frinds.filter((ele) => ele.startsWith("A"))
+console.log(filterFrinds )
+// =========================================================================
+// ========= Higher-Filter =========
+/*
+الدرس ال74
+  Advanced Example in Filter
+ */
+
+// المثال الأول
+// الشرح 1 => filter words more then 4 characters فلتره الكلام الذي أكبر من 4 حروف
+let words = "I Love Foood Code Too Playing Much";
+let smallWords = words.split(" ").filter((ele)=> ele.length <= 4).join(" ")
+console.log(smallWords)
+
+// المثال الثااني
+/*
+الشرح
+1 => أي عنصر مش رقم أطبعه 
+2 => وأذا كان هناك عنصر رقم لا تطبعه
+*/
+let ignoreBoolean2 = "ELz123er4o"
+let ignore2 = ignoreBoolean2.split("").filter((ele) => isNaN(ele)).join("")
+console.log(ignore2)
+
+// المثال الثالث
+/*
+الشرح
+1 => filter و  map تم أستخراج الناتج بدمح ال
+2 => تم أستخراج الأرقام أولا 
+3 => function داخل ال funtion  عمل 
+4 => في ضرب الأرقم في بعضه map ثم أستخدمنا ال
+*/
+let mix = "A13B52ZX"
+let  mixNumbers = mix.split("").filter((ele) => !isNaN(ele)).map((ele)=> ele * ele).join("")
+console.log(mixNumbers)
+
+// =========================================================================
+// ========= Higher-Reduce =========
+/*
+    --الدرس ال75                  
+  --Reduce--
+  Syntax
+    Name.reduce(acc , current)
+    مثال بسيط
+    let Name = (acc + current = acc + current = acc + current = acc)
+    الشرح
+  1 =>  يبدأ من index acc = 0 , index current = 1
+  2 => acc و current  هي عباره عن reduce الخاصه ب ال Array ال
+  3 => (indix 1 acc ) أذا الناتج الخارج يكون (indix 0 acc )و (index 1 current)  عند عمل عمليه حسابيه بين ال 
+  4 =>  (indix 3 acc ) والناتج يصبح (index 2 current)  و العنصر الذي بعده هوا (indix 1 acc ) ويتم عمل نفس اعمليه الحسابه علي ال
+  5 => index(0) بعد كتابه الشرط لكي يبدأ العد منه وهوا يساوي في ال reduce من خلال وضعه في داخل الأقوس الخاصه ب ال Array ويمكن أضافه عنصر في أول ال
+  */
+    // مثال
+    let nums = [10 , 20 , 30 ,20 , 50 ]
+    let addNums = nums.reduce((acc, current) => acc + current ,10)
+    console.log(addNums);
+  
+    // =========================================================================
+  
+  // ========= Higher-Reduce-Advanced-Example =========
+  /*
+  الدرس ال76
+    --Reduce-Example--
+   */
+    /*
+    المثال الأول
+    ----
+    علي استخراج الكلمه التي بها عدد احرف أكثر 
+    ----
+    الشرح
+    --الشرط--
+    # => current أكبر من عدد أحرف ال acc  أذا كان  عدد أحرف ال
+    --true في حاله ال
+    2 => acc أطبع ال
+    --false في حاله ال
+    3 => current أطبع ال
+    ----
+    */
+  
+    let theBiggest = ["Bla", "Propmaganda", "Other", "AAA", "Battery", "Test"]
+  let checkWords= theBiggest.reduce((acc , current) => acc.length > current.length? acc : current )
+  console.log(checkWords)
+  
+    let removeCharc = ["E", "@", "@", "L", "Z", "@", "@", "E", "R", "@", "O" ]
+  
+    let joinString = removeCharc.filter((ele) => !ele.startsWith("@")).reduce((acc,current)=>`${acc}${current}`)
+    console.log(joinString)
+
+
+================================================================
+
+/*
+
+============ Object ===========
+--- Syntax ---
+===الدرس رقم 79
+    - داخل متغير Metods او  properties يتم أستخدام هذه الخاصيه في وضع بينات أو   
+    - ويمكن استخدام هذه الخاصيه في أكثر من مثال
+    -  ...و أللخخ function يمكن الكتابه في داخلها بينات مثل الأسم والعمر وخصاأص مثل 
+    -  Objict ال أب الذي يعمل جميع الخواص يكون نوع بيناته وأسمه
+*/
+// مثال
+let user = {
+  // Properties
+  thaName: " Mohamed",
+  theAge: 18,
+  // Methods
+  sayHello: function () {
+    return `Hello`;
+  },
+};
+console.log(user.thaName);
+console.log(user.theAge);
+console.log(user.sayHello());
+
+// =====================================
+/*
+============ Object ===========
+--- " duble qouts " ---
+=== الدرس رقم 80
+-1=>  كيف يمكن أن نستدعيه  " duble qouts " بين علامتي تنصيص  opject الذي داخل ال Name أذا كان ال
+-2=>  ["Eelement"] داخل قوس value الطريقه هي ان نضع ال
+-3=> Name["Eelement"] ثم نحذف النقطه التي بعد المتغير 
+مثال
+*/
+
+let user2 = {
+  thaName: "Jimmy",
+  "country": "EGY",
+};
+console.log(user2["country"]);
+
+// =====================================
+/*
+============ Object ===========
+--- Nested Object And Trainnings
+===الدرس رقم 81
+Info = {
+1 => opject داخلها opject يمكن وضع 
+2 => بداخله شرط  opject يمكن عمل 
+3 = الأب أولا ثم الأبن opject  يجب وضع اسم ال opject عند عمل شرط داخل ال
+    return user3.available === true ? `Free For Work` : `Not Free`;
+}
+مثال
+*/
+let user3 = {
+  skills: ["HTML", "CSS", "JS"],
+  egypt:{ one: "Cairo",two: "Seuz" },
+  available: true,
+  checkAv: function () {
+    return user3.available === true ? `Free For Work` : `Not Free`;
+  },
+};
+console.log(user3.skills);
+console.log(user3.available);
+console.log(user3.checkAv());
+console.log(user3.egypt.two);
+
+// =====================================
+/*
+============ Object ===========
+--- New Keywords new opject
+===الدرس رقم 82
+Info {
+1 => opject طريقه كتابه جديده لل
+مثال
+let user4 = new Opject({ })
+----
+2 => ليس به خواص Opject أذا كان ال Opject كيفيه أضافه خواص لل
+مثال
+let user4 = { } // فارغ
+user4.name = 18
+user4["country"] = "EGY"
+-----
+3 =>  Object به خصأص كيف يمكنني تعديل علي تلك الخصائص من خارج ال Object أذا كان ال 
+مثال
+let user4 = { name:20, } القديم
+user4.name = 18 التعديل الجديد
+-----
+4 => opject من خارج ال opject داخل ال Methods كيفيه وضع 
+مثال
+let user4 ={ } // فارغ
+user4.sayHello = function () { //Methods ال 
+  return "hello"
+} 
+
+*/
+// =====================================
+/*
+============ Object ===========
+--- ( this ) Keywords
+===الدرس رقم 83
+
+info(
+  1 => (this) هو أمر يساوي الأب الذي فيه
+مثال
+let user5 = { // user5 الذي سوف يتم طباعته ال 
+  age:18,
+  sayHello: function (){
+    return this  //=> user5 تساوي  (this) هنا تساوي الأب الذي فيه أي أن  (this)
+  }
+}
+console.log(user5.sayHello())
+*/
+
+/*
+
+// =====================================
+============ Object ===========
+--- Create Object With Create Method 
+---  أخري لكي أضيف تعديلات opject بواسطه عمل أستدعاء ل object  أنشاء 
+===الدرس رقم 84
+Syntax
+let obj = Object.create(user6);
+1 =>  create عند أستدعاء الأب بواسطه ال
+2 =>  بدلا من اسم الأب this يجب وضع كلمه 
+3 => صلحيات الوصول للأب للتعديل عليه create لكي نعطي ال
+مثال
+
+let user6 = {
+  age: 18, 
+  doubleAge: function () {
+    return this.age * 2;
+  },
+};
+let obj = Object.create(user6); // control in user6 
+obj.age = 30 // from 18 => to 30 
+console.log(obj.doubleAge()); // 60
+*/
+
+// =====================================
+
+/*
+============ Object ===========
+Create Object With assign Method 
+الدرس ال85
+info (
+  1 =>  أولا عمل تارجت لكي نجمع فيه القيم الخارجيه  
+  2 =>  ذالك التارجت ممكن أن يكون به قيم ويمكن أن يكون فرغ
+  3 =>  جديده انت تقوم بأنشأها object مع بعض بداخل  object  هوا أمر يقوم بجمع جميع ال
+  4 =>  objects  ويمكن أنشاء بداخلها قيمه جديده لم تكن موجود مسبقا مع ال
+  5 =>  assign بوسطه ال objects ويمكن أيضا التعديل علي أول عنصر في ال
+  6 =>  من خارجه opject جديد داخل ال  opject ويمكن أضافه 
+  7 =>  أذا كان هناك أكثر من خصيه بنفس الأسم يأخذ أول خاصيه فقط لكي يطبق التعديل الجديد عليه 
+)
+*/
+// مثال
+let num1 = {
+  prop1: 1,
+};
+let num2 = {
+  prop2: 2,
+};
+let assignObject = Object.assign({/* trargit */},num1,num2,{prop3:3})
+assignObject.num4=100 // أمر جديد
+assignObject.num1=100 // assign التعديل سوف يصلح لأن الهذه الخاصيه في أول ال
+assignObject.num2 = 200 // التعديل لن يعمل لأن الخاصيه ليست في اول الخواص موجوده
+console.log(assignObject)
+
+
+// =====================================
+/*
+============ Object ===========
+Create Object With length Method 
+info = (
+  Syntax 
+  console.log(object.keys(name).lenght)
+1 => object هوا امر يقوم بحساب عدد العناصر التي داخل ال
+مثال
+let content = {name:"Jimmy",age:18} 
+console.log(Object.keys(content).length) //  2
+)
+--------------------------------------
+--------------------------------------
+============ Object ===========
+Create Object With keys Method 
+-------------------
+1 => الأب وليس عناصر من الداخل Object عندما يكون الأمر المختر هوا ال Array ألي  object هوا أمر يحول ال
+مثال
+let content = {name:"Jimmy", age:18}
+console.log(Object.keys(content)) // [name,age]
+---------
+2 => التي تكون داخل الخاصيه value الذي يتم طباعته هوا عدد أرقام ال , Object عند أختيار خاصيه من الخصأص من داخل ال
+مثال
+let content = {name:"Jimmy"}
+console.log(Object.keys(content.name)) // [ 0 , 1 , 2 , 3 , 4] name الذي داخل ال value  عدد احرف ال
+--------------------------------------
+--------------------------------------
+============ Object ===========
+Create Object With values Method 
+-------------------
+1 =>  array داخل  value الذي يكون داخل الخاصيه وا يجعل كل حرف من  حروف ال value هوا أمر يطبع ال
+مثال
+let content = {name:"Jimmy",age:18}
+console.log(Object.values(content)) //["Jimmy","18"]
+*/
+
